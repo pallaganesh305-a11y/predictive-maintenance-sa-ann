@@ -1,0 +1,80 @@
+{
+  "baseline": {
+    "Model": "Baseline ANN (All Features)",
+    "Features Used": 11,
+    "Threshold": 0.89,
+    "Accuracy": 0.9775,
+    "F1-Score": 0.6565,
+    "Recall (Sensitivity)": 0.6324,
+    "Precision": 0.6825,
+    "Specificity": 0.9896,
+    "ROC-AUC": 0.9727,
+    "PR-AUC (Avg Precision)": 0.7157,
+    "TP": 43,
+    "FP": 20,
+    "TN": 1912,
+    "FN": 25,
+    "Confusion Matrix": [
+      [
+        1912,
+        20
+      ],
+      [
+        25,
+        43
+      ]
+    ],
+    "Train Time (s)": 1.21
+  },
+  "sa_optimized": {
+    "Model": "SA-Optimized ANN (6 Features)",
+    "Features Used": 6,
+    "Threshold": 0.89,
+    "Accuracy": 0.9705,
+    "F1-Score": 0.6194,
+    "Recall (Sensitivity)": 0.7059,
+    "Precision": 0.5517,
+    "Specificity": 0.9798,
+    "ROC-AUC": 0.9721,
+    "PR-AUC (Avg Precision)": 0.6448,
+    "TP": 48,
+    "FP": 39,
+    "TN": 1893,
+    "FN": 20,
+    "Confusion Matrix": [
+      [
+        1893,
+        39
+      ],
+      [
+        20,
+        48
+      ]
+    ],
+    "Train Time (s)": 0.89
+  },
+  "selected_features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Tool wear [min]",
+    "Power [W]",
+    "Overstrain"
+  ],
+  "all_features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temp_Diff [K]",
+    "Power [W]",
+    "Overstrain",
+    "Type_H",
+    "Type_L",
+    "Type_M"
+  ],
+  "feature_reduction_percent": 45.45,
+  "sa_runtime_seconds": 37.67,
+  "total_pipeline_time_seconds": 39.87
+}
